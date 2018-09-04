@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/head') %>
+  </head>
+  <body>
+    <%- include('partials/navbar') %>
+    <div class="container">
+      <h1> Posist </h1>
+      <ul class="list-group">
+        <% nodes.forEach(function(node) { %>
+          <a class="list-group-item" href = '/node/<%= article.nodeId %>' ></a>
+        <% }); %>
+      </ul>
+  </div>
+  <%- include('partials/footer') %>
+  </body>
+</html>
